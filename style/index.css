@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* força o elemento a obedecer o tamanho do container em que foi criado*/
+}
+
+body{
+    font-family: Arial; /* mudar tipo de letra*/
+}
+
+#cabecalho{
+    background-color: #222;
+    display: flex; /*   */
+    justify-content: space-between; /* alinhando os elementos na horizontal*/
+    padding: 20px;
+}
+
+#area-logo{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#area-logo p{
+	font:28px Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	text-transform: uppercase;
+	color:#FFF;
+}
+#menu{
+    display: flex;
+    align-items: center; /* alinhando os elementos na vertical*/
+    margin-left: 100px;
+}
+
+
+#menu li{
+    display: inline-block;
+    margin-right: 18px;
+}
+
+#menu a{
+    cursor: pointer; /* Mudar o cursor para uma mão*/
+    text-decoration: none;
+    color: #fff;
+    transition: all 1s; /* me permite determinar como vão ocorrer as transições, animações e transformações no elemento*/
+	font:16px Tahoma, Geneva, sans-serif;
+}
+
+/* estilização ao passar o cursor no elemento, disparando o evento hover*/
+#menu a:hover{
+    color: #FFD700;
+    font-size: 18px;
+}
+
+#banner{
+    width: 100%;
+    text-align: center;
+    
+}
+
+#banner img{
+    width: 100%;
+
+}
+
+main{
+    text-align: center;
+    color: #222222;
+}
+
+main #intro{
+    margin-top: 30px;
+    padding: 30px;
+    color: #222;
+}
+
+#intro p{
+    margin-top: 18px;
+}
+
+
+#pessoal{
+    padding: 20px;
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    
+}
+
+
+.pesssal_cartao{
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    text-align: center;
+    width: 500px;
+    border-radius: 16px;
+}
+
+.pesssal_cartao img{
+    width: 100%;
+    height: 50%;
+    border-radius: 16px 16px 16px 16px;
+            /* c.esq c.dir b.esq b.dir  */
+        
+
+}
+
+.pesssal_cartao .conteudo{
+    padding: 20px;
+    text-align: center;
+}
+
+.pesssal_cartao .conteudo p{
+    font-size: 14px;
+    color: #666;
+    margin-top: 12px;
+    margin-bottom: 20px;
+
+}
+
+.pesssal_cartao .conteudo h4{
+    margin-bottom: 12px;
+    margin-left: 12px;
+    background-color: rgba(75,0,130,0.1);
+    width: 300px;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 30px;
+	color:#069;
+	font:16px Tahoma, Geneva, sans-serif;
+    font-weight:bold;	
+
+
+}
+
+
+
+#area-galeria{
+    margin-top: 60px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap; /* propriedade do flexbox que define se um container ou area será multilinha ou não*/
+}
+
+#area-galeria .card-galeria{
+    margin-left: 56px;
+    border-radius: 8px 8px 0px 0px;
+    width: 350px;
+    color: #363636;
+    background-color: #fff;
+    transition: all 1s;
+    margin-top: 36px;
+}
+
+#area-galeria .card-galeria:hover{
+   transform: rotate(30deg);
+
+}
+
+
+
+#area-galeria .card-galeria img{
+    width: 100%;
+    border-radius: 10px 10px 10px 10px; /*esq-cima, dir-cima, dir-baixo,esq-baixo */
+}
+
+
+
+
+#pratos{
+    padding: 20px;
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.cartao{
+    margin-top: 30px;
+    cursor: pointer;
+    text-align: center;
+    width: 300px;
+    border-radius: 16px;
+}
+
+
+.cartao img{
+    width: 100%;
+    height: 50%;
+    border-radius: 16px 16px 16px 16px;
+            /* c.esq c.dir b.esq b.dir  */
+        
+
+}
+
+.cartao .conteudo{
+    padding: 20px;
+    text-align: center;
+}
+
+.cartao .conteudo p{
+    font-size: 14px;
+    color: #666;
+    margin-top: 12px;
+    margin-bottom: 20px;
+
+}
+
+.cartao .conteudo h4{
+    margin-bottom: 12px;
+    background-color: rgba(75,0,130,0.1);
+    width: 200px;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 30px;
+    color: #4B0082;
+
+}
+
+.preco{
+    font:17px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-transform: uppercase;
+    font-size: 18px;
+    color: red;
+}
+
+
+#menu{
+    padding: 20px;
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.cartao_menu{
+    margin-top: 30px;
+    cursor: pointer;
+    text-align: center;
+    width: 500px;
+    border-radius: 16px;
+}
+
+
+.cartao_menu img{
+    width: 100%;
+    height: 400px;
+    border-radius: 16px 16px 16px 16px;
+    padding: 30px;
+
+}
+
+
+.contacto{
+    
+}
+
+footer{
+    background-color: #222;
+    padding: 30px;
+    margin-top: 100px;
+    color: #fff;
+    text-align: center; /* alinhar o texto ao centro*/
+    height: 200px;
+
+}
+
+#efeitos{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#efeitos input{
+    z-index:2;
+    margin-left:30px;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 18px;
+    color: dimgray;
+}
+
+#efeitos input[type="button"]{
+    cursor: pointer;
+    border: 3px solid #222;
+    background-color: #FFD700;
+    color: #222;
+
+    transition: all 0.5s;
+}
+
+#efeitos textarea{
+    z-index:2;
+    margin-left:30px;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 18px;
+    color: dimgray;
+}
+
+
+
+
+#efeitos button[type="button"]{
+	width:200px;
+	display:flex;
+    flex-direction: row;
+
+}
+
+
+#img-banner{
+    margin:0 auto; /*   */
+    transition: all 0.5s; /*   */
+    z-index:1; /* */
+}
+
